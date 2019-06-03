@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Name: Kristian Ecolango
+	Date: 5/31/2019
+	Most Recent Revision:
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Contact Us</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+	<style type="text/css">
+		label {
+			font-weight: bold;
+		}
+		nav {
+	    padding-top: 12px;
+	    padding-bottom: 12px;
+		}
+		nav .btn {
+			background-color: #5b7d87;
+			color: #fef9ff;
+		}
+		nav .btn:hover {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<header class="jumbotron" align="middle"><h1 id="siteName"><b><i>The Spot</i></b></h1><h2>New Location Coming Soon!</h2></header>
+		<nav>
+			<p align="middle">
+				<a class="btn badge-pill" href="index.html">Home</a>
+				<a class="btn badge-pill" href="menu.html">Menu</a>
+				<a class="btn badge-pill" href="#contact">Contact Us</a>
+			</p>
+		</nav>
+
+		<form action="contact.html" method="POST">
+			<p align="middle"><label for="name">Name:</label><input type="text" id="name" name="name"><br /></p>
+			<p align="middle"><label for="email">Email:</label><input type="text" id="email" name="email"><br /></p>
+			<p align="middle"><label for="number">Phone:</label><input type="text" id="number" name="number"><br /></p>
+
+			<p align="middle"><label for="reason">Reason for Inquiry:</label><select id="contact">
+				<option value="default" selected>Catering</option>
+				<option value="private">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select><br /></p>
+
+			<p align="middle"><label for="info">Additional Information:</label>
+			<textarea id="info" name="info"></textarea><br /></p>
+
+			<p align="middle"><legend><label for="visit">Have you been to the restaurant?</label>
+				<input type="radio" id="choice1" name="filledOut" value="NO" checked><label for="choice1">No</label>
+				<input type="radio" id="choice2" name="filledOut" value="YES"><label for="choice2">Yes</label></legend></p>
+
+			<p align="middle"><legend><label for="contact">Best days to contact you:</label>
+				<input type="checkbox" id="monday" name="days" value="monday"><label>M</label>
+				<input type="checkbox" id="tuesday" name="days" value="tuesday"><label>T</label>
+				<input type="checkbox" id="wednesday" name="days" value="wednesday"><label>W</label>
+				<input type="checkbox" id="thursday" name="days" value="thursday"><label>Th</label>
+				<input type="checkbox" id="friday" name="days" value="friday"><label>F</label>
+			<br /></legend></p>
+
+			<p align="middle"><input type="submit" name="submit" value="Send Request"></p>
+		</form>
+
+		<footer>
+			<p align="middle"><label id="address" name="address">808 Ovo Ln, Houston, TX, 77449</label></p>
+			<p align="middle"><label id="phone" name="phone">(646)592-SPOT</label></p>
+		</footer>
+	</main>
+</body>
+</html>
